@@ -14,6 +14,7 @@
 #
 # Use a descriptive name for your cluster:
 #
+cluster.name: catalystdev
 # cluster.name: my-application
 #
 # ------------------------------------ Node ------------------------------------
@@ -77,11 +78,11 @@ network.host: 0.0.0.0
 # Pass an initial list of hosts to perform discovery when new node is started:
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
-# discovery.zen.ping.unicast.hosts: ["host1", "host2"]
+discovery.zen.ping.unicast.hosts: ["es-master", "es-slave1", "es-slave2" ]
 #
 # Prevent the "split brain" by configuring the majority of nodes (total number of nodes / 2 + 1):
 #
-# discovery.zen.minimum_master_nodes: 3
+discovery.zen.minimum_master_nodes: 1
 #
 # For more information, see the documentation at:
 # <http://www.elastic.co/guide/en/elasticsearch/reference/current/modules-discovery.html>
