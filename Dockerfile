@@ -1,7 +1,9 @@
 FROM elasticsearch:latest
 
+ENV ES_HEAP_SIZE=6g
+
 # stop the services
-CMD [ "service elasticsearch stop" ]
+# CMD [ "service elasticsearch stop" ]
 
 # update config
 ADD ./elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
