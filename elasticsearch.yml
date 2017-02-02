@@ -113,4 +113,4 @@ xpack.ssl.certificate:             /usr/share/elasticsearch/config/node.crt
 xpack.ssl.certificate_authorities: [ "/usr/share/elasticsearch/config/ca.crt" ]
 
 # xpack.security.transport.ssl.enabled: true
-# xpack.security.http.ssl.enabled: true
+xpack.security.http.ssl.enabled: false
