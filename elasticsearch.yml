@@ -106,3 +106,11 @@ http.cors.allow-headers : X-Requested-With,X-Auth-Token,Content-Type, Content-Le
 
 # disable security: https://www.elastic.co/guide/en/x-pack/5.0/installing-xpack.html#xpack-enabling
 xpack.security.enabled: false
+
+# https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html
+xpack.ssl.key:                     /usr/share/elasticsearch/config/node.key 
+xpack.ssl.certificate:             /usr/share/elasticsearch/config/node.crt 
+xpack.ssl.certificate_authorities: [ "/usr/share/elasticsearch/config/ca.crt" ]
+
+# xpack.security.transport.ssl.enabled: true
+# xpack.security.http.ssl.enabled: true
