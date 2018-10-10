@@ -1,4 +1,4 @@
-$dockername = "fabric.elasticsearch"
+$dockername = "fabric.docker.elasticsearch"
 
 docker volume create --name esdata
 
